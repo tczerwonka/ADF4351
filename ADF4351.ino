@@ -4,8 +4,8 @@
 
 #define SHL(x,y) ((uint32_t)1<<y)*x
 
-#define REF_CLK 25000000
-uint8_t slave_select_pin = 9;
+#define REF_CLK 10000000
+uint8_t slave_select_pin = 10;
 unsigned long long frequency = 1000000000;
 
 // Register 0:
@@ -49,7 +49,7 @@ uint8_t mtld = 1;
 uint8_t aux_outsel = 0;
 uint8_t aux_outena;
 uint8_t aux_pwr;
-uint8_t rf_ena = ; // 0 - output disabled
+uint8_t rf_ena = 1; // 0 - output disabled
 uint8_t out_pwr = 0; // 0 - min, 3 - max
 
 // Register 5:
